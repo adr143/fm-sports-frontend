@@ -24,9 +24,6 @@
       "/account"
     ]
   },
-  "engines": {
-  "node": "18.x"
-  },
   "dependencies": {
     "express": "^5.1.0",
     "lucide-react": "^0.441.0",
