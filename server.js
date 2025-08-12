@@ -64,3 +64,8 @@ app.use('*all', async (req, res) => {
     res.status(500).end(e.stack)
   }
 })
+
+// Start http server
+app.listen(port, () => {
+  console.log(`Server started at http://localhost:${port}`)
+})
