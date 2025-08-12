@@ -72,7 +72,7 @@ export const AuthProvider: React.FC<{
       }
       // Create new user
       const newUser = {
-        id: `user_${Date.now()}`,
+        id: `user_1`,
         name,
         email,
         password // In a real app, this would be hashed

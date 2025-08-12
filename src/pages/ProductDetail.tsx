@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import pkg from 'react-helmet-async';
 import Button from '../components/UI/Button';
 import { useCart } from '../contexts/CartContext';
 import { useParams, Link } from 'react-router-dom';
@@ -88,17 +88,6 @@ const ProductDetailPage = () => {
     }
   };
   return <div className="container mx-auto px-4 py-8">
-      {/* Helmet for SEO */}
-      <Helmet>
-        <title>{product.name} | My Store</title>
-        <meta name="description" content={product.description} />
-        <meta property="og:title" content={product.name} />
-        <meta property="og:description" content={product.description} />
-        <meta property="og:image" content={product.images[0]} />
-        <meta property="og:type" content="product" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
-
       <Link to="/products" className="inline-flex items-center text-gray-600 mb-6 hover:text-black">
         <ArrowLeftIcon size={16} className="mr-2" />
         Back to Products

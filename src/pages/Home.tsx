@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import Button from '../components/UI/Button';
 import ProductCard from '../components/UI/ProductCard';
 import InstagramFeed from '../components/UI/InstagramFeed';
@@ -49,13 +48,6 @@ const collections = [{
 
 const HomePage = () => {
   return <div className="bg-white">
-      <Helmet>
-        <title>Home - Premium Footwear Collections</title>
-        <meta name="description" content="Discover the latest premium footwear designed for performance and style. Shop running, basketball, and lifestyle collections." />
-        <meta name="keywords" content="footwear, running shoes, basketball shoes, premium shoes, shoe collections" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://fmsports.vercel.app/" />
-      </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center">
         <div className="absolute inset-0">
